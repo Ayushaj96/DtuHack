@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.codebusters.medlife.Record">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/capture"
+            android:layout_marginBottom="26dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/imageView"
+            android:layout_above="@+id/editText"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name of Medicine"
+            android:ems="10"
+            android:layout_marginLeft="66dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/editText"
+            android:layout_above="@+id/editText2"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="108dp" />
+
+        <Button
+
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:text="@android:string/search_go"
+            android:src="@drawable/capture"
+            android:layout_marginTop="-50dp"
+            android:layout_above="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+
+            android:layout_gravity="center"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="textMultiLine"
+            android:hint="Side Effects ---"
+            android:textSize="20dp"
+            android:textColorHint="@color/colorAccent"
+            android:id="@+id/editText2"
+            android:layout_marginBottom="39dp"
+            android:layout_above="@+id/editText3"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="textPersonName"
+            android:hint="Description --- "
+            android:textSize="20dp"
+
+            android:textColorHint="@color/colorAccent"
+            android:id="@+id/editText3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="53dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+</android.support.design.widget.CoordinatorLayout>
